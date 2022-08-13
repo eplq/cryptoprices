@@ -8,8 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "test": "vitest run src",
-    "test:watch": "vitest src"
+    "test": "vitest run tests",
+    "test:watch": "vitest tests"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
@@ -29,6 +29,7 @@
   "dependencies": {
     "@smui/data-table": "^6.0.0",
     "@smui/linear-progress": "^6.0.0",
-    "svelte-routing": "^1.6.0"
+    "svelte-routing": "^1.6.0",
+    "whatwg-fetch": "^3.6.2"
   }
 }

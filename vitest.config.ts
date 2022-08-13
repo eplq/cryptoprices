@@ -3,10 +3,16 @@ import {svelte} from '@sveltejs/vite-plugin-svelte'
 
 export default defineConfig({
     plugins: [svelte({hot: !process.env.VITEST})],
-    // @ts-expect-error
     test: {
-        include: ['src/**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
+        include: ['**/*.{test,spec}.{js,mjs,cjs,ts,mts,cts,jsx,tsx}'],
         globals: true,
         environment: 'jsdom',
+        setupFiles: './tests/setupTests.ts',
+        deps: {
+            inline: [
+                "msw", // temporary workaround because msw and whatwg-fetch are commonjs and not esm
+                "whatwg-fetch"
+            ]
+        }
     },
 })
