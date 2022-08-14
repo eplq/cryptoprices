@@ -13,6 +13,9 @@ export default defineConfig({
                 "msw", // temporary workaround because msw and whatwg-fetch are commonjs and not esm
                 "whatwg-fetch"
             ]
+        },
+        coverage: {
+            reporter: ['text', 'json', 'html']
         }
     },
 })
