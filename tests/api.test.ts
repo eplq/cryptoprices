@@ -8,4 +8,6 @@ test('testing api', async () => {
     expect(coins[0].id).toBe("bitcoin")
     expect(coins[1].id).toBe("ethereum")
     expect(coins[2].id).toBe("tether")
+    
+    expect(false).toBeTruthy()
 })
