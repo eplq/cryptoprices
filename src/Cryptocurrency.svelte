@@ -8,7 +8,7 @@
 <Accordion>
     <Panel>
         <Header>
-            {coin.name}
+            <h2>{coin.name}</h2>
         </Header>
         <Content>
             {coin.current_price}

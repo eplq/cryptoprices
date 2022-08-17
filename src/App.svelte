@@ -17,9 +17,7 @@
 
 <style>
     main {
-        margin-top: 2rem;
-        margin-right: 3rem;
-        margin-left: 3rem;
+        margin: 2rem 1rem;
 
         display: flex;
         flex-flow: row nowrap;
