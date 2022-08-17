@@ -1,8 +1,8 @@
 <script lang="ts">
     import Accordion, { Panel, Header, Content } from '@smui-extra/accordion'
-    import type { Coin } from './types';
+    import type { Coin } from './types'
 
-    export let coin: Coin;
+    export let coin: Coin
 </script>
 
 <Accordion>

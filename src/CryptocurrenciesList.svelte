@@ -1,8 +1,8 @@
 <script lang="ts">
     import CircularProgress from '@smui/circular-progress'
 
-    import { getCoins } from './api';
-    import CryptoDetail from './CryptoDetail.svelte';
+    import { getCoins } from './api'
+    import Cryptocurrency from './Cryptocurrency.svelte'
 </script>
 
 {#await getCoins()}
@@ -10,7 +10,7 @@
 {:then coins}
     <div class="list">
         {#each coins as coin}
-            <CryptoDetail {coin} />
+            <Cryptocurrency {coin} />
         {/each}
     </div>
 {/await}
