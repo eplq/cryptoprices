@@ -1,17 +1,15 @@
 <script lang="ts">
     import TopAppBar, { Row, Section, Title } from '@smui/top-app-bar';
-import CryptocurrenciesList from './CryptocurrenciesList.svelte';
+    import CryptocurrenciesList from './CryptocurrenciesList.svelte';
 </script>
 
-<header>
-    <TopAppBar variant="static">
-        <Row>
-            <Section>
-                <Title>Precios de las criptomonedas</Title>
-            </Section>
-        </Row>
-    </TopAppBar>
-</header>
+<TopAppBar variant="static">
+    <Row>
+        <Section>
+            <Title>Precios de las criptomonedas</Title>
+        </Section>
+    </Row>
+</TopAppBar>
 
 <main>
     <CryptocurrenciesList />

@@ -2,7 +2,7 @@
     import CircularProgress from '@smui/circular-progress'
 
     import { getCoins } from './api';
-import CryptoDetail from './CryptoDetail.svelte';
+    import CryptoDetail from './CryptoDetail.svelte';
 </script>
 
 {#await getCoins()}
