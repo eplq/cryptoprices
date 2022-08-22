@@ -38,7 +38,7 @@
                 <tr>
                     <th>Market Cap</th>
                     <td>
-                        {coin.market_cap.toLocaleString("es-ES")}
+                        {coin.market_cap.toLocaleString("es-ES")} &euro;
                     </td>
                 </tr>
             </table>
